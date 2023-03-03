@@ -1,872 +1,481 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@800&display=swap');
-body{
-    margin: 0;
-    padding: 0;
-    overflow-x:hidden;
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&display=swap');
+
+.jojo {
+    display: none;
+}
+
+h1,h2,h3,p {
+    margin-block-end: 0em;
+    margin-block-start: 0em;
+}
+
+.flow {
+    width: fit-content;
+    height: fit-content;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
     max-width: 1440px;
+    width: 100%;
+    overflow-x: hidden;
 }
-.main-div {
-    height: 900px;
+
+.button {
+    cursor: pointer;
 }
-.skilled {
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    margin-left: 165px;
-    margin-top: 29px;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 36px;
-    line-height: 45px;
-    display: inline-block;
-    color:#13183F;
+
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    width: 100%;
 }
-.nav-bar {
-    background: #13183F;
+
+.logo {
+    margin-top: 38.75px;
+    margin-left: 165.79px;
+    height: 27.68400001525879px;
+    width: 111.16799926757812px;
+}
+
+.black {
+    position: absolute;
+    height: 56px;
+    width: 167px;
     border-radius: 28px;
-    height:56px;
-    width:167px;
-    position: relative;
-    top: -47px;
-    margin-right: 165px;
+    background: #13183F;
     display: flex;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
+    margin-right: 165px;
+    margin-top: 24px;
+    transition: .8s;
+    margin-left: 1108px;
 }
-.firstready {
-    background: #13183F;
-    border-radius: 28px;
-    height:56px;
-    width:167px; 
-    cursor: pointer;
-    display: flex;
-    text-align: center;
-    justify-items: center;
-}
-.firstready:hover {
+
+.black:hover {
     background: #666CA3;
+    transform: scale(1.1);
 }
-.nav-bar:hover {
-    background: #666CA3;
-    -webkit-transition: all 500ms ease;
-    -moz-transition: all 500ms ease;
-    -ms-transition: all 500ms ease;
-    -o-transition: all 500ms ease;
-    transition: all 500ms ease;
-    height: 62px;
-    width:172px; 
-    border-radius: 50px;
+
+.get-black {
+    color: #FFFFFF;
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
 }
-.aaa {
+
+.container {
     display: flex;
-    justify-content: end;
-    cursor: pointer;
-    height: 3px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: fit-content;
+    width: fit-content;
+    margin-top: 172px;
+    margin-left: 165px;
 }
-.GetStarted {
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    color:#ffffff;
-    display: flex;
-    position: relative;
-    top: 16px;
-    left: 38px;
-}
-.hero {
-    position: absolute;
-    left: 669px;
-    top: -105px;
-}
-.h1 {
-    display: inline-block;
+
+.main-h1 {
     font-family: 'Plus Jakarta Sans';
     font-style: normal;
     font-weight: 800;
     font-size: 56px;
     line-height: 71px;
-    width: 457px;
-    margin-left: 165px;
-    margin-top: 80px;
+    color: #13183F;
 }
-.our {
-font-family: 'Plus Jakarta Sans';
-font-style: normal;
-font-weight: 300;
-font-size: 18px;
-line-height: 28px;
-display: inline-block;
-width: 445px;
-color: #83869A;
-margin-top: 0;
-margin-left: 165px;
-margin-bottom: 0;
+
+.main-p {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    color: #83869A;
+    width: 445px;
+    margin-top: 29px;
 }
-.getrb {
-    width:167px;
-    height:63px;
-    background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+
+.liner {
+    height: 63px;
+    width: 167px;
+    left: 0px;
+    top: 0px;
     border-radius: 31.5px;
+    background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+    margin-top: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 165px;
-    margin-top: 40px;
-    cursor: pointer;
+    transition: .8s;
 }
-.getrb:hover {
+
+.liner:hover {
+    transform: scale(1.1);
     background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
-    width: 182px;
-    height: 73px;
-    border-radius: 50px;
-    -webkit-transition: all 500ms ease;
--moz-transition: all 500ms ease;
--ms-transition: all 500ms ease;
--o-transition: all 500ms ease;
-transition: all 500ms ease;
-margin-left: 160px;
 }
-.get {
-    color:#ffffff;
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 28px;
+
+.hero {
+    position: absolute;
+    width: 991.63px;
+    height: 936.92px;
+    left: 784px;
+    top: -146.13px;
 }
-.main-background {
+
+.flow {
+    width: fit-content;
+    height: fit-content;
+    overflow: hidden;
+}
+
+.safe {
+    height: 226px;
+}
+
+.second-bg {
     height: 888px;
-    background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 0;
-}
-.nothing {
-    width: 350px;
-    height: 322px;
-    background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
-    display: inline-flex;
-    direction:row;
-    margin-left: 165px;
-    border-radius: 15px;
-}
-.nothing1 {
-    font-family: 'Plus Jakarta Sans';
-font-style: normal;
-font-weight: 800;
-font-size: 32px;
-line-height: 40px;
-width: 286px;
-color:#ffffff;
-margin: 32px 32px 32px 32px;
-}
-.ani {
-    width: 350px;
-    height: 322px;
-    background-color: white;
-    display: inline-flex;
-    direction:row;
-    margin-left: 40px;
-    border-radius: 15px;
-    box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.0442381);
-}
-.ani1 {
-    width: 56px;
-height: 56px;
-position:absolute;
-top: 880px;
-left: 585px;
-}
-.ani2 {
-    margin-left: 32px;
-    margin-top: 52px;
-    height: 30px;
-    font-family: 'Plus Jakarta Sans';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 24px;
-    line-height: 30px;
-    color: #13183F;
-}
-.ani3 {
-    min-width: 286px;
-    display: flex;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 28px;
-    height: 30px;
-    position: relative;
-    top: 90px;
-    left: -120px;
-    font-family: 'Plus Jakarta Sans';
-    color: #83869A;
-}
-.ani4 {
-    font-family: 'Plus Jakarta Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 28px;
-    color: #F74780;    
-    position: absolute;
-    top: 1142px;
-    left: 585px;
-}
-.ani4:hover {
-    color:#FFA7C3;
-}
-.des {
-    width: 350px;
-    height: 322px;
-    background-color: white;
-    margin-left: 40px;
-    border-radius: 15px;
-    box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.0442381);
-}
-.des1 {
-    width: 56px;
-    height: 56px;
-    position:absolute;
-    top: 875px;
-    left: 980px;
-}
-.des2 {
-font-family: 'Plus Jakarta Sans';
-font-style: normal;
-font-weight: 800;
-font-size: 24px;
-line-height: 30px;
-width: 81px;
-height: 30px;
-margin-top: 44px;
-margin-left: 32px;
-}
-.des3 {
-font-family: 'Plus Jakarta Sans';
-font-style: normal;
-font-weight: 500;
-font-size: 18px;
-line-height: 28px;
-color: #83869A;
-width: 286px;
-margin-left: 32px;
-margin-top: 30px;
-margin-block-end: 0em;
-}
-.des4 {
-    font-family: 'Plus Jakarta Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 28px;
-    color: #F74780; 
-    margin-top: 70px;
-    margin-left: 32px;  
-    position: relative;
-    top: 52px;
-}
-.des4:hover {
-    color:#FFA7C3;
-}
-.photo {
-    width: 355px;
-    height: 322px;
-    background-color: white;
-    display: inline;
-    flex-wrap: wrap;
-    margin-left: 165px;
-    border-radius: 15px;
-    box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.0442381);
-    position: relative;
-    top: -20px;
-}
-.photo1 {
-    width: 56px;
-    height: 56px;
-    position: absolute;
-    top: -30px;
-    left: 32px;
-}
-.photo2 {
-font-family: 'Plus Jakarta Sans';
-font-style: normal;
-font-weight: 800;
-font-size: 24px;
-line-height: 30px;
-color: #13183F;
-margin-top: 44px;
-margin-left: 32px;
-height: 30px;
-}
-.photo3 {
-font-family: 'Plus Jakarta Sans';
-font-style: normal;
-font-weight: 500;
-font-size: 18px;
-line-height: 28px;
-color: #83869A;
-margin-left: 32px;
-margin-top: 30px;
-margin-block-end: 0em;
-}
-.photo4 {
-    font-family: 'Plus Jakarta Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 28px;
-    color: #F74780; 
-    margin-top: 70px;
-    margin-left: 32px;  
-    position: relative;
-    top: 52px;
-}
-.photo4:hover {
-    color:#FFA7C3;
-}
-.crypto {
-    width: 350px;
-    height: 322px;
-    background-color: white;
-    display: inline-flex;
-    margin-left: 40px;
-    border-radius: 15px;
-    box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.0442381);
-    position: relative;
-    top: -20px;
-}
-.crypto1 {
-    width: 56px;
-    height: 56px;
-    position: absolute;
-    top: -30px;
-    left: 32px;
-}
-.crypto2 {
-    font-family: 'Plus Jakarta Sans';
-font-style: normal;
-font-weight: 800;
-font-size: 24px;
-line-height: 30px;
-color: #13183F;
-margin-top: 44px;
-margin-left: 32px;
-height: 30px;
-}
-.crypto3 {
-    font-family: 'Plus Jakarta Sans';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 28px;
-    color: #83869A;
-    margin-left: 32px;
-    margin-top: 30px;
-    margin-block-end: 0em;
-    min-width: 286px;
-    height: 112px;
-    position: absolute;
-    top: 70px;
-    }
-    .crypto4 {
-        font-family: 'Plus Jakarta Sans';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 28px;
-        color: #F74780; 
-        margin-top: 70px;
-        margin-left: 32px;  
-        height: 20px;
-        position: relative;
-        top: 170px;
-        left: -116px;
-    }
-    .crypto4:hover {
-        color:#FFA7C3;
-    }
-.busnis {
-    width: 350px;
-    height: 322px;
-    background-color: white;
-    display: inline-flex;
-    margin-left: 40px;
-    border-radius: 15px;
-    box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.0442381);
-    position: relative;
-    top: -20px;
-}
-.busnis1 {
-    width: 56px;
-    height: 56px;
-    position: absolute;
-    top: -30px;
-    left: 32px;
-}
-.busnis2 {
-    font-family: 'Plus Jakarta Sans';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 24px;
-    line-height: 30px;
-    color: #13183F;
-    margin-top: 44px;
-    margin-left: 32px;
-    height: 30px;
-}
-.busnis3 {
-    font-family: 'Plus Jakarta Sans';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 28px;
-    color: #83869A;
-    margin-left: 32px;
-    margin-top: 30px;
-    margin-block-end: 0em;
-    min-width: 286px;
-    height: 112px;
-    position: absolute;
-    top: 70px;
-    }
-    .busnis4 {
-        font-family: 'Plus Jakarta Sans';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 28px;
-        color: #F74780; 
-        margin-top: 70px;
-        margin-left: 32px;  
-        height: 20px;
-        position: relative;
-        top: 170px;
-        left: -136px;
-    }
-    .busnis4:hover {
-        color:#FFA7C3;
-    }
-.end-nav{
-    height: 120px;
     width: 1440px;
-    background: #13183F;
-    margin-top: 0;
-    display: inline-block;
-}
-.end-text {
-    font-family: 'Plus Jakarta Sans';
-font-style: normal;
-font-weight: 800;
-font-size: 36px;
-line-height: 45px;
-
-/* FFFFFF */
-
-color: #FFFFFF;
-display: inline;
-margin-block-start: 0em;
-    margin-block-end: 0em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    margin-top: 37px;
-    margin-left: 165px;
-    position: relative;
-    top: 37px;
-}
-.rbger-end {
-    width: 167px;
-    height: 56px;
-    background: linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
-border-radius: 28px;
-display: flex;
-justify-content: end;
-margin-right: 165px;
-}
-.rbger-end:hover {
-    background-color: #13183F;
-}
-.hover {
-    min-width: 167px;
-    height: 56px;
-    background: linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
-    border-radius: 28px;
     display: flex;
-    text-align: center;
+    justify-content: center;
+    background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
+}
+
+.group {
+    height: 724px;
+    width: 1110px;
+    padding-top: 24px;    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.ggs {
+    height: 322px;
+    width: 350px;
+    border-radius: 15px;
+    background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+    margin-right: 20px;
+}
+
+.three {
+    background: #FFFFFF;
+    box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.0442381);
+    display: flex;
+    flex-direction: column;
+}
+
+.main-h2 {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 40px;
+    color: #FFFFFF; 
+    height: 120px;
+    width: 286px;
+    margin-left: 32px;
+    margin-top: 64px;
+}
+
+.svg {
+    position: relative;
+    left: 32px;
+    bottom: 24px;
+    height: 56px;
+    width: 56px;
+}
+
+h3 {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 30px;
+    color: #13183F;
+    margin-left: 32px;
+}
+
+.card-p {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    color: #83869A;
+    width: 286px;
+    margin-top: 24px;
+    margin-left: 32px;
+}
+
+.hover {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    color: #F74780;
+    margin-left: 32px;
+    transition: 1s;
+    cursor: pointer;
+    width: 104px;
+}
+
+.one {
+    margin-top: 24px;
+}
+
+.two {
+    margin-top: 52px;
+}
+
+.hover:hover {
+    color: #FFA7C3;
+    transform: scale(1.2);
+}
+
+footer {
+    height: 120px;
+    width: 100%;
+    background: #13183F;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-light {
+    margin-left: 165px;
+}
+
+.last {
+    height: 56px;
+    width: 167px;
+    border-radius: 28px;
+    background: linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
+    margin-right: 165px;
+    display: flex;
+    align-items: center;
     justify-content: center;
     cursor: pointer;
+    transition: .8s;
 }
-.hover:hover {
-    background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
-    display: flex;
-    text-align: center;
-    min-width: 177px;
-    height: 63px;
-    border-radius: 50px;
-    -webkit-transition: all 500ms ease;
-    -moz-transition: all 500ms ease;
-    -ms-transition: all 500ms ease;
--o-transition: all 500ms ease;
-transition: all 500ms ease;
-}
-.flex {
-    display: flex;
-    justify-content: end;
-    margin-bottom: 10px;
-    position: relative;
-    top: -10px;
-}
-.last {
-font-family: 'Plus Jakarta Sans';
-font-style: normal;
-font-weight: 700;
-font-size: 18px;
-line-height: 28px;
-color: #FFFFFF;
-width: 165px;
-height: 50px;
-text-align: center;
-display: inline;
-margin-block-start: 0em;
-margin-block-end: 0em;
-margin-top:13px;
-}
+
 .last:hover {
-    margin-top:18px;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
+    transform: scale(1.2);
 }
-@media screen and (max-width: 1366px){
-   .skilled {
-    margin-left: 100px;
-   }   
-   .our {
-    margin-left: 100px;
-   }
-   .nothing {
-    margin-left: 100px;
-   }
-   .getrb {
-    margin-left: 100px;
-    -webkit-transition: all 5ms ease;
-    -moz-transition: all 5ms ease;
-    -ms-transition: all 5ms ease;
-    -o-transition: all 5ms ease;
-    transition: all 5ms ease;
-   }
-   .getrb:hover {
-    margin-left: 100px;
-   }
-   .photo {
-    margin-left: 100px;
-   }
-   .h1 {
-    margin-left: 100px;
-   }
-   .hero {
-    position: absolute;
-    left: 599px;
-   }
-   .ani1 {
-    position: absolute;
-    left: 525px;
-   }
-   .ani4 {
-    position: absolute;
-    left: 525px;
-   }
-   .des1 {
-    position: absolute;
-    left: 912px;
-   }
-}
-@media screen and (max-width: 768px) {
-    .skilled {
-font-family: 'Plus Jakarta Sans';
-font-style: normal;
-font-weight: 800;
-font-size: 28px;
-line-height: 35px;
-margin-left: 39px;
-margin-top: 30px;
+
+@media screen and (max-width: 768px){
+    html,body {
+        width: 100%;
+        overflow-x: hidden;
     }
-    .nav-bar {
-        margin-right: 40px;
+
+    .logo {
+        height: 25px;
+        width: 89px;
+        margin-top: 31px;
+        margin-left: 39px;
     }
-    .h1 {
-font-weight: 800;
-font-size: 40px;
-line-height: 50px;
-margin-left: 39px;
-margin-top: 30px;
-margin-bottom: 0;
-    }
-    .our {
-font-weight: 500;
-font-size: 16px;
-line-height: 26px;
-margin-left: 39px;
-margin-top: 25px;
-margin-bottom: 0;
-    }
-    .getrb {
-width: 167px;
-height: 56px;
-margin-left: 39px;
-margin-top: 24px;
-    }
-    .getrb:hover {
-     margin-left: 39px;
-     height: 61px;
-    }
-    .get{
-font-weight: 700;
-font-size: 16px;
-line-height: 26px;
-    }
+
     .hero {
-        position: absolute;
-        left: 385px;
-        top: -90px;
+        overflow: hidden;
+    }
+
+    .black {
+        margin-left: 588px;
+        height: 48px;
+        width: 140px;
+        border-radius: 28px;
+    }
+    
+    .get-black {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .main-h1 {
+        font-weight: 800;
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .main-p {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 26px;
+        width: 398px;
+        margin-top: 25px;
+    }
+
+    .liner {
+        height: 56px;
+        width: 167px;
+        border-radius: 31.5px;
+        margin-top: 24px;
+    }
+
+    .container {
+        margin-left: 39px;
+        margin-top: 61px;
+    }
+
+    .hero {
         content: url(./skilled-elearning-landing-page/assets/image-hero-tablet.png);
+        height: 640px;
+        width: 640.71435546875px;
+        left: 405px;
+        top: -71.130859375px;
+        overflow: hidden;
     }
-    .main-div {
-        height: 641px;
+
+    .safe {
+        height: 177px;
     }
-    .nothing {
-height: 259px;
-width: 339px;
-border-radius: 10px;
-margin-left: 39px;
+
+    .second-bg {
+        width: 768px;
+        height: 999px;
     }
-    .nothing1 {
-font-size: 24px;
-line-height: 32px;
+
+    .group {
+        height: 913px;
+        width: 700px;
     }
-    .ani {
-height: 259px;
-width: 339px;
-border-radius: 10px;
-margin-left: 10px;
-    }
-    .ani1 {
-        top: 621px;
-        left: 422px;
-    }
-    .ani2 {
-        font-weight: 800;
-font-size: 20px;
-line-height: 25px;
-    }
-    .ani3 {
-        font-style: normal;
-font-size: 16px;
-min-width: 293px;
-max-width: 286px;
-margin-left: 20px;
-margin-top: 16px;
-margin-block-start: 0.00em;
-    }
-    .ani4 {
-        top:836px;
-        left: 422px;
-    }
-    .des {
-        margin-top: 56px;
-        height: 259px;
-width: 339px;
-border-radius: 10px;
-background-color: white;
-    }
-    .des1 {
-        left: 75px;
-        top: 955px;
-    }
-    .des2 {
-        font-weight: 800;
-font-size: 20px;
-line-height: 25px;
-    }
-    .des3 {
-        font-style: normal;
-font-size: 16px;
-min-width: 293px;
-max-width: 286px;
-margin-left: 32px;
-margin-top: 16px;
-margin-block-start: 0.00em;
-    }
-    .des4 {
-        top: 24px;
-    }
-    .photo {
-       margin-top: 75px;
-       margin-left: 11px;
-       height: 259px;
-width: 339px;
-border-radius: 10px;
-    }
-    .photo2 {
-        font-weight: 800;
-        font-size: 20px;
-        line-height: 25px;
-    }
-    .photo3 {
-        font-style: normal;
-font-size: 16px;
-min-width: 293px;
-max-width: 286px;
-margin-left: 32px;
-margin-top: 16px;
-margin-block-start: 0.00em;
-    }
-    .photo4 {
-        top: 24px;
-    }
-    .crypto {
-        height: 259px;
-width: 339px;
-border-radius: 10px;
-margin-top: 56px;
-    }
-    .crypto2 {
-        font-weight: 800;
-        font-size: 20px;
-        line-height: 25px;
-    }
-    .crypto3 {
-        font-style: normal;
-font-size: 16px;
-min-width: 299px;
-max-width: 286px;
-margin-left: 32px;
-margin-top: 76px;
-margin-block-start: 0.00em;
-top: 90px;
-    }
-    .crypto4 {
-        top: 134px;
-        left: -103px;
-    }
-    .busnis {
-        margin-top: 56px;
-        margin-left: 10px;
+
+    .ggs {
         height: 259px;
         width: 339px;
         border-radius: 10px;
+        margin-right: 10px;
     }
-    .busnis2 {
+
+    .main-h2 {
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 32px;
+        margin-top: 56px;
+        margin-left: 32px;
+    }
+
+    h3 {
+        font-family: 'Plus Jakarta Sans';
+        font-style: normal;
         font-weight: 800;
         font-size: 20px;
         line-height: 25px;
     }
-    .busnis3 {
-        font-style: normal;
-font-size: 16px;
-min-width: 299px;
-max-width: 286px;
-margin-left: 32px;
-margin-top: 76px;
-margin-block-start: 0.00em;
-top: 90px;
+
+    .card-p {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 26px;
+        width: 286px;
+        margin-top: 16px;
     }
-    .main-background {
-        height: 999px;
-    }
-    .busnis4 {
-        top: 134px;
-        left: -117px;
-    }
-    .end-nav {
-        width:  773px;
-    }
-    .end-text {
-        margin-left: 40px;
-}
-    .rbger-end {
-        margin-right: 50px;
-    }
-}
-@media screen and (max-width: 375px) {
-    .skilled {
-        margin-left: 16px;
-    }
-    .nav-bar {
-        margin-right: 17px;
-    }
-    .h1 {
-        margin-left: 16px;
-    }
-    .our {
-        width: 343px;
-        margin-left: 16px;
-    }
-    .getrb {
-        margin-left: 16px;
-    }
-    .getrb:hover {
-        margin-left: 16px;
-    }
-    .main-div {
-        height: 800px;
-    }
-    .hero {
-        position:absolute;
-        left: -35px;
-        top: 410px;
-        content: url(./skilled-elearning-landing-page/assets/image-hero-mobile.png);
-    }
-    .nothing {
-        width: 343px;
-        height: 120px;
-        margin-left: 16px;
-    }
-    .nothing1 {
+
+    .two {
         margin-top: 24px;
     }
-    .ani {
+
+    .logo-light {
+        margin-left: 40px;
+    }
+
+    .last {
+        margin-right: 39px;
+    }
+
+    footer {
+        height: 120px;
+    }
+    
+    .hover:hover {
+        transform: scale(1.1);
+    }
+}
+
+@media screen and (max-width: 375px) {
+     .jojo {
+        display: block;
+     }
+
+    .logo {
         margin-left: 16px;
+        margin-top: 22px;
+    }
+
+    .black {
+        margin-left: 219px;
+        margin-top: 19px;
+    }
+
+    .main-p {
         width: 343px;
-        margin-top: 40px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 26px;
     }
-    .ani1 {
-        position: absolute;
-        left: 45px;
-        top: 935px;
-    }
-    .ani4 {
-      left: 48px;
-      top: 1155px
-    }
-    .des {
-        margin-top: 40px;
+
+    .container {
+        margin-top: 22px;
         margin-left: 16px;
     }
-    .des1 {
-        top: 1250px;
-        left: 45px;
+
+    .hero {
+        content: url(./skilled-elearning-landing-page/assets/image-hero-mobile.png);
+        height: 311px;
+        width: 334px;
+        left: 24px;
+        top: 403px;
     }
-    .photo {
-        margin-top: 60px;
-        margin-left: 16px;
+
+    .safe {
+        height: 290px;
     }
-    .crypto {
-        margin-top: 40px;
-        margin-left: 16px;
+
+    .lil {
+        background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+        height: 120px;
+        width: 343px;
+        border-radius: 10px;
     }
-    .busnis {
-        margin-top: 40px;
-        margin-left: 16px;
+
+    .main-h2 {
+        font-family: 'Plus Jakarta Sans';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 32px;
+        margin-left: 28px;
+        margin-top: 24px;
     }
-    .main-background {
-        width: 375px;
+
+
+    .ggs  {
+        width: 343px;
+    }
+    
+    .second-bg {
         height: 1695px;
-        background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
-    }
-    .end-nav {
         width: 375px;
     }
-    .end-text {
-        font-size: 28px;
+
+    .group {
+        max-width: 343px;
+        width: 100%;
+        height: 1615px;
+    }
+
+    .logo-light {
         margin-left: 16px;
     }
-    .rbger-end {
-        width: 140px;
-        height: 48px;
+
+    .last {
         margin-right: 16px;
     }
 }
